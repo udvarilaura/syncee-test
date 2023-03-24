@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main container */
+
+.sign_in_page {
+    display: flex;
+    height: 100%;
+}
+
+
+/* Left half */
+
+.login-side {
+    min-width: 50vw;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.login-forms-container {
+    padding: 10vw 9vw;
+    max-width: 40vw;
+}
+
+.syncee-logo {
+    min-width: 50px;
+    max-width: 120px;
+    margin-bottom: 4em;
+    height: auto;
+    vertical-align: top;
+    border: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.login-forms {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember-forgot-password {
+    width: 100%;
+}
+
+.remember-me {
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 13px;
+}
+
+p {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 12px bolder;
+}
+
+.forgot-password {
+    float: right;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 16px;
+    color: #286ef9;
+}
+
+.register-link {
+    font-size: 14px;
+    color: #286ef9;
+    text-decoration: none;
+}
+
+.footer-rights {
+    position: absolute;
+    bottom: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    bottom: 1em;
+}
+
+
+/* Right half */
+
+.page-decoration {
+    width: 50%;
+    height: 100%;
+    background-position: left;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 50vw;
+    right: 0;
+}

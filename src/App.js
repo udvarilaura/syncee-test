@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import SignIn from './routes/sign-in/sign-in-page.component';
+import SignUp from './routes/sign-up/sign-up-page.component';
+import Home from './routes/home/home.component';
+import {Routes, Route} from 'react-router-dom';
+import CurrencyList from './routes/API-task/api-task.component';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route index element={<SignIn/>}/>
+      <Route path='/sign-up' element={<SignUp/>} />
+      <Route path="/home" element={<Home/>} />
+      <Route path='/currencies' element={<CurrencyList />} />
+    </Routes>
+  )
 }
 
 export default App;
